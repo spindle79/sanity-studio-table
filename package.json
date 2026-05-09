@@ -1,0 +1,63 @@
+{
+  "name": "sanity-studio-table",
+  "version": "0.1.0",
+  "description": "Virtualized table primitive for Sanity Studio plugins. @sanity/ui-styled, @tanstack/react-virtual under the hood, with built-in sort + search context, custom column definitions, and a row-actions slot.",
+  "keywords": [
+    "sanity",
+    "sanity-studio",
+    "studio",
+    "table",
+    "virtualized",
+    "tanstack",
+    "data-grid"
+  ],
+  "license": "MIT",
+  "author": "Adam Harris",
+  "homepage": "https://github.com/spindle79/sanity-studio-table",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spindle79/sanity-studio-table.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.10.8",
+    "motion": "^11.13.0"
+  },
+  "peerDependencies": {
+    "@sanity/icons": "^3",
+    "@sanity/ui": "^2",
+    "react": "^18 || ^19"
+  },
+  "devDependencies": {
+    "@sanity/icons": "^3",
+    "@sanity/ui": "^2",
+    "@types/react": "^19",
+    "react": "^19",
+    "tsup": "^8",
+    "typescript": "^5.7"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
