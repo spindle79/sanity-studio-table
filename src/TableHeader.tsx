@@ -19,7 +19,6 @@ const BasicHeader = ({
   <Button
     {...headerProps}
     mode="bleed"
-    size="default"
     text={text}
     disabled
     style={{ cursor: "default" }}
